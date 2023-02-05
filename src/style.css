@@ -1,10 +1,10 @@
 @font-face {
   font-family: "KyivTypeSerif";
-  src: url("./assets/fonts/KyivTypeSerif-Bold3");
+  src: url("assets/fonts/KyivTypeSerif-Bold3.woff");
 }
 @font-face {
   font-family: "Manrope";
-  src: url("./assets/fonts/Manrope-Regular.woff");
+  src: url("assets/fonts/Manrope-Regular.woff");
 }
 
 :root {
@@ -16,6 +16,7 @@
 
   --text-color-1: #fff;
   --text-color-2: #9a6c33;
+  --text-color-3: #3A3937;
 
   --bg-color-1: #252f2b;
 
@@ -86,19 +87,25 @@ html {
   align-items: center;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .introdution > nav > .links {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  transition: opacity 1s;
 }
 
-.introdution > nav > .links > div {
+.introdution > nav > .links > a {
   margin-right: 50px;
   cursor: pointer;
   font-size: var(--font-size-3);
   font-family: "Manrope";
   font-weight: 400;
+  text-decoration: none;
 }
 
 .burger-ico {
@@ -111,6 +118,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .face-ico {
@@ -213,8 +221,8 @@ html {
   background-image: url("./assets/images/ico-flower.png");
   width: 83px;
   height: 96px;
-  left: -180px;
-  top: 5px;
+  left: -193px;
+  top: 10px;
 }
 
 .about > .description {
@@ -271,4 +279,61 @@ html {
   width: 200px;
   border: var(--text-color-2) 2px solid;
   margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.recognition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.recognition > .title > div:first-child {
+  font-size: 96px;
+  color: var(--text-color-2);
+}
+
+.recognition > .title > .ico {
+  z-index: 2;
+  position: relative;
+  background-image: url("./assets/images/ico-flower.png");
+  width: 83px;
+  height: 96px;
+  left: 179px;
+  top: -107px;
+}
+
+.recognition > .title > div:last-child {
+  font-size: 96px;
+  margin: -100px 0px 0px 390px;
+}
+
+.recognition > .description {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.recognition > .description > .text {
+  width: 634px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Manrope";
+}
+
+.recognition > .description > :first-child {
+  transform: rotate(-90deg);
+  font-size: 80px;
+  font-weight: 350;
+  color: var(--text-color-3);
+  margin-right: -70px;
+}
+
+.recognition > .description > :last-child {
+  transform: rotate(90deg);
+  font-size: 80px;
+  font-weight: 350;
+  color: var(--text-color-3);
+  margin-left: -75px;
 }
