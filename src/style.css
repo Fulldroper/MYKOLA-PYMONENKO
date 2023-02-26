@@ -19,12 +19,6 @@
   --text-color-3: #3A3937;
 
   --bg-color-1: #252f2b;
-
-  --photo-src: url("https://media.tenor.com/O_QyG4rznW8AAAAd/smoking.gif");
-  --photo-telegram-src: url("https://media.tenor.com/O_QyG4rznW8AAAAd/smoking.gif");
-  --photo-github-src: url("https://media.tenor.com/O_QyG4rznW8AAAAd/smoking.gif");
-  --photo-discord-src: url("https://media.tenor.com/O_QyG4rznW8AAAAd/smoking.gif");
-
   --icons-size: 100px;
 }
 
@@ -336,4 +330,54 @@ html {
   font-weight: 350;
   color: var(--text-color-3);
   margin-left: -75px;
+}
+
+.die {
+  font-size: var(--font-size-3);
+  font-weight: 400;
+  font-family: 'Manrope';
+
+  margin-left: 75px;
+  margin-right: 75px;
+
+  border-top: #9a6c33 solid;
+  border-bottom: #9a6c33 solid;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  height: 365px;
+
+  align-items: center;
+}
+
+.die > div {
+  width: 633px;
+}
+
+.die > :first-child > .sity {
+  background-image: url("assets/images/sity.png");
+  width: 617px;
+  height: 117px;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.die > div > :first-child {
+  margin-bottom: 50px;
+}
+
+.die > div > .title > .header {
+  color: var(--text-color-2);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.die > div > .title > .date {
+  font-size: 24px;
+  font-weight: 350;
 }
